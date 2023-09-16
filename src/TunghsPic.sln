@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunghsPic", "TunghsPic\TunghsPic.csproj", "{354155E8-5A11-4028-8494-B9FF3C7CA6E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunghsPic", "TunghsPic\TunghsPic.csproj", "{354155E8-5A11-4028-8494-B9FF3C7CA6E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{2135B861-BDE9-4560-9E7A-6405B0742B25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{9C8CFBC4-3CB0-46F6-B826-8EC709F589D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
