@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 
 using System;
@@ -7,29 +8,71 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TunghsPic.Common.Bases
+namespace TunghsPic.Common.Bases;
+
+public abstract class ViewModelBase : ObservableObject
 {
-    public abstract class ViewModelBase : ObservableObject
+    public ViewModelBase() { }
+
+    public ViewModelBase(IView view)
     {
-        public ViewModelBase() { }
+        View = view;
+    }
 
-        public virtual void Cleanup()
-        {
-            WeakReferenceMessenger.Default.Cleanup();
-        }
+    public IView View { get; private set; }
 
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
+    public virtual void Cleanup()
+    {
+        WeakReferenceMessenger.Default.Cleanup();
+    }
+}
 
-        protected virtual void Dispose(bool disposing)
+// 특정 IView 타입을 사용하는 경우 제네릭 ViewModelBase 사용
+public abstract class ViewModelBase<T> : ObservableObject where T : IView
+{
+    public ViewModelBase(T view)
+    {
+        View = view;
+    }
+
+    public T View { get; private set; }
+
+    public virtual void Cleanup()
+    {
+        WeakReferenceMessenger.Default.Cleanup();
+    }
+}
+
+/// <summary>
+/// Popup Dialog ViewModelBase <para/>
+/// 팝업 다이얼로그 뷰모델로 사용
+/// </summary>
+public abstract class PopupDialogViewModelBase : ObservableObject
+{
+    private ViewModelBase? _popupVM;
+
+    public ViewModelBase? PopupVM
+    {
+        get => _popupVM;
+        set => SetProperty(ref _popupVM, value);
+    }
+
+    private RelayCommand? _closeCommand;
+    public RelayCommand? CloseCommand
+    {
+        get
         {
-            if (disposing)
-            {
-                Cleanup();
-            }
+            return _closeCommand ??
+                (_closeCommand = new RelayCommand(
+                    () =>
+                    {
+                        PopupVM = null;
+                    }));
         }
+    }
+
+    public virtual void Cleanup()
+    {
+        WeakReferenceMessenger.Default.Cleanup();
     }
 }

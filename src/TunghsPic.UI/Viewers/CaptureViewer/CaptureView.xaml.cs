@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TunghsPic
+namespace TunghsPic.UI.Viewers.CaptureViewer
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// CaptureView.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CaptureView : UserControl
     {
-        public MainWindow()
+        public CaptureView()
         {
             InitializeComponent();
         }

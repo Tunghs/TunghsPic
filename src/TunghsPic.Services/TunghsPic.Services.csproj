@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TunghsPic.Common\TunghsPic.Common.csproj" />
+  </ItemGroup>
+
 </Project>
