@@ -1,13 +1,4 @@
-﻿using CommunityToolkit.Mvvm.DependencyInjection;
-
-using Microsoft.Extensions.DependencyInjection;
-
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows;
 
 using TunghsPic.Common.Helper;
@@ -36,6 +27,8 @@ namespace TunghsPic
             {
                 MessageBox.Show("이미 실행중 입니다.", "Warning");
             }
+
+
         }
 
         #region Methodes
