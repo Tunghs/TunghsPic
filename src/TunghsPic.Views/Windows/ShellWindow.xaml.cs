@@ -22,6 +22,13 @@ namespace TunghsPic.Views.Windows
         public ShellWindow()
         {
             InitializeComponent();
+
+            this.MouseLeftButtonDown += this.OnMouseLeftButtonDown;
+        }
+
+        private void OnMouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }
