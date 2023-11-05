@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using TunghsPic.Common.Bases;
+
 namespace TunghsPic.ViewModels
 {
-    internal class ShellViewModel
+    public class ShellViewModel : ViewModelBase
     {
+
     }
 }

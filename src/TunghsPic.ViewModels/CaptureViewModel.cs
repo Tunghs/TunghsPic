@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using TunghsPic.Common.Bases;
+
 namespace TunghsPic.ViewModels
 {
-    internal class CaptureViewModel
+    public class CaptureViewModel : ViewModelBase
     {
     }
 }

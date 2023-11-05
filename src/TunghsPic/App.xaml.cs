@@ -2,6 +2,8 @@
 using System.Windows;
 
 using TunghsPic.Common.Helper;
+using TunghsPic.ViewModels;
+using TunghsPic.Views.Windows;
 
 namespace TunghsPic
 {
@@ -28,7 +30,17 @@ namespace TunghsPic
                 MessageBox.Show("이미 실행중 입니다.", "Warning");
             }
 
+            ShellViewModel shellViewModel = new ShellViewModel();
+            ShellWindow shellWindow = new ShellWindow();
 
+            shellWindow.DataContext = shellViewModel;
+            shellWindow.ShowDialog();
+
+            shellViewModel.Cleanup();
+
+            // clean up 코드 추가
+            if (Current != null)
+                Current.Shutdown();
         }
 
         #region Methodes
