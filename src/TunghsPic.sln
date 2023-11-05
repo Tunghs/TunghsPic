@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunghsPic.Common", "TunghsP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TunghsPic.Services", "TunghsPic.Services\TunghsPic.Services.csproj", "{73A6345D-F6A4-4D1A-AFB2-A03522758FFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunghsPic.UI", "TunghsPic.UI\TunghsPic.UI.csproj", "{CC5E5EE3-C1E0-41BB-B9B9-79D3E5ACD2B6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{73A6345D-F6A4-4D1A-AFB2-A03522758FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73A6345D-F6A4-4D1A-AFB2-A03522758FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73A6345D-F6A4-4D1A-AFB2-A03522758FFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC5E5EE3-C1E0-41BB-B9B9-79D3E5ACD2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC5E5EE3-C1E0-41BB-B9B9-79D3E5ACD2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC5E5EE3-C1E0-41BB-B9B9-79D3E5ACD2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC5E5EE3-C1E0-41BB-B9B9-79D3E5ACD2B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,7 +54,6 @@ Global
 		{9C9C38BF-10EF-4D1D-840D-ED5C29474ADD} = {53F4E990-7FA9-4ED1-9DCD-C839971FB6E5}
 		{5AE0E445-5B37-4BFC-9ADC-8A27B601BD3E} = {53F4E990-7FA9-4ED1-9DCD-C839971FB6E5}
 		{73A6345D-F6A4-4D1A-AFB2-A03522758FFA} = {53F4E990-7FA9-4ED1-9DCD-C839971FB6E5}
-		{CC5E5EE3-C1E0-41BB-B9B9-79D3E5ACD2B6} = {F8D5130F-0509-4A45-B3A1-9FF06AD65F22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {641A183F-AA85-4D76-92B7-B27856AE7913}
