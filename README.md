@@ -5,3 +5,4 @@
    - Crop
    - Resize
 3. Rename
+4. Image Viewer -> Mac Style
